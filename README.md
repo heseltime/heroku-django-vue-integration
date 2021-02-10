@@ -4,9 +4,11 @@
 
 I always figured the Heroku logo looks like a castle tower, and python is snakes, so here is Knights, an integration template for a heroku-deployed, integrated django and vue project. See a small-scale app using this structure here: https://medknights.herokuapp.com 
 
-It takes two seconds to load, warning: German language! 
+# It takes two seconds to load, warning: German language! 
 
-Added on top is simply a user signup system (django standard implementation), and once you login as a user you have access to the Vue app. Neat! This gives you a sense of where you can take this base template, but the core idea is a responsive Vue SPA framed by the utility of Django.
+> The linked prokect is not the base template found in this repo, but an implementation.
+
+Added on top is simply a user signup system (django standard user admin), and once you login as a user you have access to the Vue app. Neat! This gives you a sense of where you can take this base template, but the core idea is a responsive Vue SPA framed by the utility of Django.
 
 ## And how to do it.
 
