@@ -20,5 +20,19 @@ https://medium.com/@williamgnlee/simple-integrated-django-vue-js-web-application
 
 > At the point of writing, the Medium is about three years out of date, and the Heroku docs are a bit older even. The rest of this Readme concerns itself with the most important codebase changes to be weary of, as implemented in this repo.
 
-1.
+In addition, the Lee piece does not cover database setup, which we will do here: the medknights example above uses Postgres, and that's the template choice as well.
+
+So before we begin, here is our toolkit for today:
+
+- Django and Vue
+- Node.js, npm
+- axios
+- django-cors-headers
+- and Postgres for db
+
+In order, here are the steps in the Lee that need modification in 2021(+).
+
+...
+
+
 
