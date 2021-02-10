@@ -1,30 +1,17 @@
-# heroku_django_vue
+# Knights Heroku-Django-View-Integration
 
-> A Vue.js project
+> What this is.
 
-## Build Setup
+I always figured the Heroku logo looks like a castle tower, and python is snakes, so here is Knights, an integration template for a heroku-deployed, integrated django and vue project. See a small-scale app using this structure here: https://medknights.herokuapp.com (takes two seconds to load, warning: German language.) Added on top is simply a user signup system (django standard implementation), and once you login as a user you have access to a kind of dropbox app. This gives you a sense of where you can take this base template, but the core idea is a vue SPA framed by Django power.
 
-``` bash
-# install dependencies
-npm install
+## How to do it.
 
-# serve with hot reload at localhost:8080
-npm run dev
+The core steps are the ones found in the Heroku docs on django. For a more informal write up, here is a great piece by William Lee on Medium concerning this topic: https://medium.com/@williamgnlee/simple-integrated-django-vue-js-web-application-configured-for-heroku-deployment-c4bd2b37aa70
 
-# build for production with minification
-npm run build
+At the point of writing this, the Medium is about three years out of date, and the Heroku docs are a bit older even. Here are the most important codebase changes to be weary of, in chronological order of Mr Lee's approach:
 
-# build for production and view the bundle analyzer report
-npm run build --report
+1.
 
-# run unit tests
-npm run unit
+2.
 
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+3.
