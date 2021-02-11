@@ -1,6 +1,8 @@
 # Knights Heroku-Django-View-Integration
 
-## What this is.
+## What this is :question:
+
+:european_castle: :heavy_plus_sign: :snake: ...
 
 I always figured the Heroku logo looks like a castle tower, and python is snakes, so here is Knights, an integration template for a heroku-deployed, integrated django and vue project. See a small-scale app using this structure here: https://medknights.herokuapp.com 
 
@@ -8,9 +10,13 @@ I always figured the Heroku logo looks like a castle tower, and python is snakes
 
 > The linked prokect is not the base template found in this repo, but an implementation.
 
-Added on top is simply a user signup system (django standard user admin), and once you login as a user you have access to the Vue app. Neat! This gives you a sense of where you can take this base template, but the core idea is a responsive Vue SPA framed by the utility of Django.
+# Here is the template in action: https://heroku-django-vue.herokuapp.com/#/
 
-## And how to do it.
+> Takes two seconds to load (Heroku).
+
+Added on top in the first example is simply a user signup system (django standard user admin), and once you login as a user you have access to the Vue app. Neat! This gives you a sense of where you can take this base template, but the core idea is a responsive Vue SPA framed by the utility of Django. The core piece is a Django API (a view that implements a JSON set) that is then consumed by Vue with the help of Axios.
+
+## And how to do it :rocket:
 
 The core steps are the ones found in the Heroku docs on django. 
 
@@ -29,8 +35,11 @@ So before we begin, here is our toolkit for today:
 - axios
 - django-cors-headers
 - and Postgres for db
+- oh and also because I like to use Fontawesome in ALL my projectsw, vue-fontawesome: https://github.com/FortAwesome/vue-fontawesome
 
-In order, here are the steps in the Lee that need modification in 2021(+).
+> This is a great template to get into muscle memory, as it is a super base for all kinds of projects, typically from a small to medium scale.
+
+In order, here are the numbered steps in the Lee we want to modify a bit:
 
 ...
 
