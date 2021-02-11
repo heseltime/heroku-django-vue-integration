@@ -14,7 +14,7 @@ I always figured the Heroku logo looks like a castle tower, and python is snakes
 
 > Takes two seconds to load (Heroku).
 
-Added on top in the first example is simply a user signup system (django standard user admin), and once you login as a user you have access to the Vue app. Neat! This gives you a sense of where you can take this base template, but the core idea is a responsive Vue SPA framed by the utility of Django. The core piece is a Django API (a view that implements a JSON set) that is then consumed by Vue with the help of Axios.
+Added on top in the first example is simply a user signup system (django standard user admin), and once you log in as a user you have access to the Vue app. Neat! This gives you a sense of where you can take this base template, but the core idea is a responsive Vue SPA framed by the utility of Django. The core piece is a Django API (a view that implements a JSON set) that is then consumed by Vue with the help of Axios.
 
 ## And how to do it :rocket:
 
@@ -41,7 +41,52 @@ So before we begin, here is our toolkit for today:
 
 In order, here are the numbered steps in the Lee we want to modify a bit:
 
-...
+### Step 1 is straigtforward, Step 2 required the following modification using Venv as my virtual environments tool (Lee uses Conda) and regular npm.
 
+> In Venv: 
+
+    npm install -g @vue/cli
+
+and
+
+    vue init webpack .
+    
+ The dot targets the same directory. I like the structure Lee uses, vue sitting directly inside the Django structure.
+ 
+ ### Step 3
+ 
+ Don't forget to 
+ 
+     import os
+     
+ Duh, but Lee doesn't mention
+ 
+ ### Next steps are straighforward, Step 8 however:
+ 
+ Two pieces here.
+ 
+A) 
+
+The latest version of WhiteNoise removes some options which were deprecated in the previous major release: The WSGI integration option for Django (which involved editing wsgi.py) has been removed. Instead, you should add WhiteNoise to your middleware list in settings.py and remove any reference to WhiteNoise from wsgi.py. 
+
+B) 
+
+The whitenoise.django.GzipManifestStaticFilesStorage alias has now been removed. Instead you should use the correct import path: whitenoise.storage.CompressedManifestStaticFilesStorage.
+
+See also: http://whitenoise.evans.io/en/stable/changelog.html#v4-0
+
+Overlooking this part can result in errors like
+
+    The resource from “https://heseltime.herokuapp.com/static/css/app.48175cc56e52e020bf178616c0977374.css” was blocked due to MIME type (“text/html”) mismatch (X-Content-Type-Options: nosniff).
+    
+### The final steps are also still up to date.
+
+And I absolutely love the deploy via Github option Heroku provides!
+
+## The rest of this setup/readme concerns Postgres setup.
+
+This is not covered in the Lee guide, so I'll go into it one by one.
+
+### 1
 
 
