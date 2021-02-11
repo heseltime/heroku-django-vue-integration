@@ -26,7 +26,7 @@ https://medium.com/@williamgnlee/simple-integrated-django-vue-js-web-application
 
 > At the point of writing, the Medium is about three years out of date, and the Heroku docs are a bit older even. The rest of this Readme concerns itself with the most important codebase changes to be weary of, as implemented in this repo.
 
-In addition, the Lee piece does not cover database setup, which we will do here: the medknights example above uses Postgres, and that's the template choice as well.
+In addition, the Lee piece does not cover database setup, which we will do in brief at the end: the medknights example above uses Postgres.
 
 So before we begin, here is our toolkit for today:
 
@@ -34,14 +34,14 @@ So before we begin, here is our toolkit for today:
 - Node.js, npm
 - axios
 - django-cors-headers
-- and Postgres for db
+- (Postgres for db)
 - oh and also because I like to use Fontawesome in ALL my projects, vue-fontawesome: https://github.com/FortAwesome/vue-fontawesome
 
 > This is a great template to get into muscle memory, as it is a super base for all kinds of projects, typically from a small to medium scale.
 
 In order, here are the numbered steps in the Lee we want to modify a bit:
 
-### Step 1 is straigtforward, Step 2 required the following modification using Venv as my virtual environments tool (Lee uses Conda) and regular npm.
+### Step 1 is straightforward, Step 2 required the following modification using Venv as my virtual environments tool (Lee uses Conda) and regular npm.
 
 > In Venv: 
 
@@ -61,7 +61,7 @@ and
      
  Duh, but Lee doesn't mention
  
- ### Next steps are straighforward, Step 8 however:
+ ### Next steps are straightforward, Step 8 however:
  
  Two pieces here.
  
@@ -83,10 +83,18 @@ Overlooking this part can result in errors like
 
 And I absolutely love the deploy via Github option Heroku provides!
 
-## The rest of this setup/readme concerns Postgres setup.
+# Next up: Postgres setup.
 
-This is not covered in the Lee guide, so I'll go into it one by one.
+This is not covered in the Lee guide, but in practice, Django will need a database to talk to. Postgres is integrated excellently into Heroku. Here are two links to get you started.
 
-### 1
+Docs:
 
+https://devcenter.heroku.com/articles/django-app-configuration
+
+Noteworthy write-up:
+
+https://blog.usejournal.com/deploying-django-to-heroku-connecting-heroku-postgres-fcc960d290d1
+
+
+If I expand the template to include the db side, I will make sure to let you know here. 
 
