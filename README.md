@@ -35,7 +35,7 @@ So before we begin, here is our toolkit for today:
 - axios
 - django-cors-headers
 - and Postgres for db
-- oh and also because I like to use Fontawesome in ALL my projectsw, vue-fontawesome: https://github.com/FortAwesome/vue-fontawesome
+- oh and also because I like to use Fontawesome in ALL my projects, vue-fontawesome: https://github.com/FortAwesome/vue-fontawesome
 
 > This is a great template to get into muscle memory, as it is a super base for all kinds of projects, typically from a small to medium scale.
 
