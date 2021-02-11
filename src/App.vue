@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <font-awesome-icon id="header_icon" icon="chess-knight" />
     <router-view/>
   </div>
 </template>
@@ -18,5 +19,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#header_icon {
+  font-size: 4em;
 }
 </style>
